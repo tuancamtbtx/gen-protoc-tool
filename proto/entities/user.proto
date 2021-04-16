@@ -1,0 +1,16 @@
+syntax ="proto3";
+
+package tiki.common.entities;
+
+option go_package = "github.com/tuancamtbtx/genproto/go/entities;entities";
+option java_package = "vn.qn.common.entities";
+option java_multiple_files = true;
+option java_outer_classname = "UserProto";
+
+message UserProfile {
+    string user_name = 1;
+    string full_name = 2;
+    string age = 3;
+    string password = 4;
+}
+
